@@ -7,16 +7,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query:{
-          presets: ['react', 'es2015'],
-          plugins: ['transform-runtime']
-        }
-      },
-      {
-        test: /\.jsx$/,
+        test: /\.js$|\.jsx$/,
         exclude: /node_modules/,
         loader: 'babel',
         query:{
