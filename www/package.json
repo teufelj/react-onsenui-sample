@@ -20,6 +20,8 @@
     "react": "~15.3.0",
     "react-dom": "~15.3.0",
     "react-onsenui": "~1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
     "ripple-emulator": "^0.9.36",
     "webpack": "~1"
   }
