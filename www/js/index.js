@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Navigator} from 'react-onsenui';
 import Page1 from './Page1';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import reducer from './reducer';
+const store = createStore(reducer);
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +32,8 @@ class App extends Component {
 }
 
 ReactDOM.render(
-  <App />
+  <Provider store={store}>
+    <App />
+  </Provider>
   , document.getElementById('app')
 );
