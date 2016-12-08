@@ -23,3 +23,5 @@ cordovaでandroidアプリを作成
 > cordova platform add android
 
 > cordova run android (or cordova emulate android)
+
+reduxブランチは状態管理にreduxを使用したバージョンです
